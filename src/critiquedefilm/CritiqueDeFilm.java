@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class CritiqueDeFilm {
 
     public static void main(String[] args) {
-        ArrayList<Film> catalogue = new ArrayList<Film>();
+/*        ArrayList<Film> catalogue = new ArrayList<Film>();
 
         System.out.println("Ajouter Le Parrain au Catalogue");
         Film leParrain = new Film("Le parrain","Francis Ford Coppola");
@@ -23,5 +23,6 @@ public class CritiqueDeFilm {
         //La moyenne des score de Fargo
         System.out.println(fargo.score());
 
+        */
     }
 }
