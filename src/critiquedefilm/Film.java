@@ -8,5 +8,8 @@ public class Film{
         this.titre = titre;
         this.realisateur = realisateur;
     }
-
+    
+    public boolean nouvelleCritique(String auteur,String description, int score){
+        return true;
+    }
 }

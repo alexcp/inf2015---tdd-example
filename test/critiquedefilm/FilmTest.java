@@ -5,12 +5,22 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 public class FilmTest{
+    Film film;
 
     public FilmTest(){}
 
+    @Before
+    public void setUp(){
+        film = new Film("Le parrain","Francis Ford Coppola");
+    }
+
     @Test
     public void testNouveauFilm(){
-        Film leParrain = new Film("Le parrain","Francis Ford Coppola");
-        assertNotNull(leParrain);
+        assertNotNull(film);
+    }
+
+    @Test
+    public void testAjouterCritiqueFilm(){
+        assertTrue(film.nouvelleCritique("Roger Ebert","description",4));
     }
 }
