@@ -1,8 +1,11 @@
 package critiquedefilm;
 
+import java.util.ArrayList;
+
 public class Film{
     String titre;
     String realisateur;
+    ArrayList<Critique> critiques = new ArrayList<Critique>();
 
     public Film(String titre, String realisateur){
         this.titre = titre;
@@ -10,6 +13,7 @@ public class Film{
     }
     
     public boolean nouvelleCritique(String auteur,String description, int score){
-        return true;
+        Critique nouvelleCritique = new Critique(auteur,description,score);
+        return critiques.add(nouvelleCritique) && nouvelleCritique != null;
     }
 }
