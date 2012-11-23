@@ -16,4 +16,12 @@ public class Film{
         Critique nouvelleCritique = new Critique(auteur,description,score);
         return critiques.add(nouvelleCritique) && nouvelleCritique != null;
     }
+
+    public double score(){
+        double sum = 0;
+        for(Critique critique : critiques){
+            sum += (double)critique.getScore();
+        }
+        return sum / critiques.size();
+    }
 }
